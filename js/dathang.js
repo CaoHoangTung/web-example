@@ -7,6 +7,9 @@ document.getElementById('search').onkeyup = function(){
             if (!elem.classList.value.includes(searchText)){
                 elem.classList.remove("show");
                 elem.classList.add("hide");
+            } else {
+                elem.classList.remove("hide");
+                elem.classList.add("show");
             }
         }
     } else {
